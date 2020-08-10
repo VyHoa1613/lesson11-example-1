@@ -15,7 +15,7 @@ app.set('view engine', 'pug');
 app.set('views','./views');
 
 // Set some defaults (required if your JSON file is empty)
-
+app.use(express.static('public'))
 app.use("/books",booksRouter);
 
 
